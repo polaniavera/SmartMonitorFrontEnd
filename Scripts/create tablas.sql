@@ -60,3 +60,29 @@ PRIMARY KEY(IdDocumento)
 go
 
 
+USE [MonitoreoDB]
+GO
+
+/****** Object:  Table [dbo].[Usuario]    Script Date: 09/03/2017 10:43:23 p.m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Usuario](
+	[IdUsuario] [int] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[Apellido] [varchar](50) NOT NULL,
+	[Telefono] [decimal](15, 0) NOT NULL,
+	[Empresa] [varchar](50) NULL,
+	[Correo] [varchar](50) NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[IdUsuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)
+
+GO
+
+
