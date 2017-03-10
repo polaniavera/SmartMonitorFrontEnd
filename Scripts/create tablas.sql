@@ -16,6 +16,23 @@ PRIMARY KEY(IdRegistro)
 );
 go
 
+CREATE TABLE Registro
+(
+IdRegistro int NOT NULL,
+Latitud decimal(8,6),
+Longitud decimal(8,6),
+TanqueConductor decimal(5,2),
+TanquePasajero decimal(5,2),
+BotonPanico bit,
+Kilometraje decimal(6,2),
+Velocidad decimal(6,2),
+Fecha date,
+Hora time,
+IdUsuario int,
+IdItem int,
+PRIMARY KEY(IdRegistro)
+);
+go
 
 CREATE TABLE Item
 (
